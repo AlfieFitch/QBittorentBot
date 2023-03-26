@@ -32,7 +32,7 @@ class MyClient(discord.Client):
 async def check_torrents():
     print("checking new torrents")
     print(films)
-    channel = client.get_channel(890756113354616853)
+    channel = client.get_channel(<channel_id>)
     for torrent in qbt_client.torrents_info():
         print(torrent.name)
 
